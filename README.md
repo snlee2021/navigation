@@ -16,6 +16,9 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 
+
+sudo apt-get install ros-melodic-map-server
+
 rosrun map_server map_saver
 
 
@@ -25,6 +28,7 @@ export TURTLEBOT3_MODEL=waffle
 
 catkin_ws/src/turtlebot3/turtlebot3_navigation/launch/turtlebot3_navigation.launch
 
+sudo apt-get install ros-melodic-navigation
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch
 
